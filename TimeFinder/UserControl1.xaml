@@ -10,14 +10,14 @@
              DataContext="{Binding RelativeSource={RelativeSource Self}}"
              Foreground="White">
     <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Orientation="{Binding TaskbarOrientation}">
+        <WrapPanel.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Configure" Click="ConfigButtonPressed"/>
+                <Separator/>
+            </ContextMenu>
+        </WrapPanel.ContextMenu>
         <GroupBox x:Name="boundingBox" Header="Next Salah Time" BorderThickness="0.25" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="8" HorizontalContentAlignment="Stretch" Width="180">
-            <GroupBox.ContextMenu>
-                <ContextMenu>
-                    <MenuItem Header="Configure" Click="ConfigButtonPressed"/>
-                    <Separator/>
-                </ContextMenu>
-            </GroupBox.ContextMenu>
-           <DockPanel HorizontalAlignment="Center" VerticalAlignment="Stretch">
+            <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                 <DockPanel.Resources>
                     <Style TargetType="Label">
                         <Setter Property="Foreground" Value="White" />
