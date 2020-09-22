@@ -1,0 +1,53 @@
+﻿<Window x:Class="TimeFinder.ConfigWindow"
+        WindowStyle="ToolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeFinder"
+        mc:Ignorable="d"
+        Title="Configuration" Height="200" Width="345">
+    <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+        <GroupBox Header="Settings">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                <DockPanel HorizontalAlignment="Left" LastChildFill="False"  VerticalAlignment="Top">
+                    <Label Content="Latitude:" VerticalAlignment="Center"/>
+                    <TextBox x:Name="latText" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Width="120"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Left" LastChildFill="False"  VerticalAlignment="Top">
+                    <Label Content="Longitude:" VerticalAlignment="Center"/>
+                    <TextBox x:Name="longText" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Width="120"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Left" LastChildFill="False"  VerticalAlignment="Top">
+                    <Label Content="School:" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="schoolCB" Width="140" SelectedIndex="0">
+                        <ComboBoxItem>Shafi, Maliki, Hanbali</ComboBoxItem>
+                        <ComboBoxItem>Hanafi</ComboBoxItem>
+                    </ComboBox>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Left" LastChildFill="False"  VerticalAlignment="Top">
+                    <Label Content="Method:" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="methodCB" Width="265" SelectedIndex="2">
+                        <ComboBoxItem>Shia - Ithna Ashari</ComboBoxItem>
+                        <ComboBoxItem>University of Islamic Sciences, Karachi</ComboBoxItem>
+                        <ComboBoxItem>Islamic Society of North America</ComboBoxItem>
+                        <ComboBoxItem>Muslim World League</ComboBoxItem>
+                        <ComboBoxItem>Umm Al-Qura University, Makkah</ComboBoxItem>
+                        <ComboBoxItem>Egyptian General Authority of Survey</ComboBoxItem>
+                        <ComboBoxItem>Invalid</ComboBoxItem>
+                        <ComboBoxItem>Institute of Geophysics, University of Tehran</ComboBoxItem>
+                        <ComboBoxItem>Gulf Region</ComboBoxItem>
+                        <ComboBoxItem>Kuwait</ComboBoxItem>
+                        <ComboBoxItem>Qatar</ComboBoxItem>
+                        <ComboBoxItem>Majlis Ugama Islam Singapura, Singapore</ComboBoxItem>
+                        <ComboBoxItem>Union Organization islamic de France</ComboBoxItem>
+                        <ComboBoxItem>Diyanet İşleri Başkanlığı, Turkey</ComboBoxItem>
+                        <ComboBoxItem>Spiritual Administration of Muslims of Russia</ComboBoxItem>
+                    </ComboBox>
+                </DockPanel>
+                <Separator Height="10" Margin="0"/>
+                <Button Content="Save Settings" Width="75" HorizontalAlignment="Left" Click="SaveConfig"/>
+            </StackPanel>
+        </GroupBox>
+    </WrapPanel>
+</Window>
