@@ -28,9 +28,8 @@ using System.IO;
 namespace TimeFinder
 {
     [ComVisible(true)]
-    //[Guid("89BF6B36-A0B0-4C95-A666-87A55C226986")]
     [Guid("4B8730FD-F800-4B4C-B6FA-F40CEEBE5F41")]
-    [CSDeskBandRegistration(Name = "Time Finder", ShowDeskBand = true)]
+    [CSDeskBandRegistration(Name = "Next Prayer Time", ShowDeskBand = true)]
     public class TimeFinder : CSDeskBandWpf
     {
         UserControl1 mainControl = new UserControl1();
